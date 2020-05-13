@@ -1,0 +1,1043 @@
+:root{
+  --orange:  #f3973a;
+  --gray: #4D4D4D;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Arial';
+}
+
+/*________________________________navbar______________________*/
+nav{
+  padding: 15px 42px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background: #fff;
+}
+
+
+.Recherche{
+   display: none;
+}
+ul{
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+}
+li{
+  padding-right: 45px;
+}
+li input{
+  margin-right: 100px;
+}
+a{
+  text-decoration: none;
+  color: #666666;
+  align-items: center;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.icon{
+  width: 5vh;
+}
+.panier{
+  width: 4vh;
+}
+li a i{
+  font-size: 29px;
+  color: orange;
+
+}
+.fa-bars{
+  color: var(--orange);
+}
+.logo{
+  width: 6vw;
+  margin-right: 16vw;
+}
+/*________________________________header______________________*/
+.input,
+.Recherche{
+  padding: 12px 200px 12px 12px;
+  border-radius: 15px;
+  border: 2px solid var(--orange);
+  outline: none;
+}
+.section-1{
+  background-image: url(../assets/header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.banner{
+  position: absolute;
+  top: 330px;
+  right: 90px;
+  text-align: center;
+}
+.banner h3{
+  font-size: 50px;
+  color: #fff;
+}
+.banner input{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  background: #fff;
+  padding: 12px 20px 12px 20px;
+  border-radius: 7px;
+  margin-top: 20px;
+  outline: none;
+  cursor: pointer;
+  color: var(--orange);
+  border: none;
+  transition: .5s;
+}
+.banner input:hover{
+  background: var(--orange);
+  color: #fff;
+}
+
+/*________________________________Feautures______________________*/
+.section-2{
+  display: flex;
+  justify-content: space-around;
+  background: #F2F2F2;
+  margin: 30px 150px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.container{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.container img{
+  width: 7vh;
+  padding-right: 10px;
+}
+.container p{
+  color: var(--orange);
+  font-size: 16px;
+}
+.container p:last-child{
+  padding-top: 8px;
+}
+
+/*________________________________Actualité______________________*/
+.actualite{
+  display: grid;
+  grid-template-columns: repeat(3,28vw);
+  grid-gap: 25px;
+  padding: 0 10%;
+  margin-bottom: 4vw;
+  text-align: center;
+}
+.section-3 h1{
+  text-align: center;
+  color: var(--orange);
+  padding: 50px;
+  font-size: 25px;
+}
+.actualite img{
+  padding-bottom: 12px;
+  width: 100%;
+  height: 13vw;
+  object-fit: cover;
+}
+
+.container1{
+  width: 39vh;
+  border-radius: 20px;
+}
+.container1 h3{
+  color: #fff;
+  font-size: 22px;
+
+}
+.container1 div{
+  padding: 10px 20px 22px 10px;
+  color: #fff;
+}
+.fa-chevron-right{
+  padding: 25px;
+}
+.container1.one{
+  background: #139FC0;
+}
+.container1.two{
+  background: #A75B2B;
+}
+.container1.three{
+  background: #F2424F;
+}
+.container1.four{
+  background: #8A2D25;
+}
+.container1.five{
+  background: #F39637;
+}
+.container1.six{
+  background: #B7B52E;
+}
+
+/*________________________________Rayons______________________*/
+.section-4{
+  background: var(--orange);
+  text-align: center;
+  padding: 20px;
+}
+.section-4 h1{
+  font-size: 25px;
+  color: #fff;
+}
+.container2{
+  display: flex;
+  text-align: center;
+  padding: 20px;
+  justify-content: center;
+  color:  #666666;
+}
+.row img{
+  width: 15vh;
+  text-align: center;
+}
+.row img[alt="pains"]{
+  margin-top: 20px;
+}
+.row{
+  border-radius: 10%;
+  padding: 1%;
+  background: #fff;
+  margin-left: 20px;
+  text-align: center;
+  width: 135px;
+}
+.fas.fa-plus{
+  font-size: 30px;
+  color: #fff;
+  background: var(--orange);
+  border-radius: 50%;
+  padding: 10%;
+  margin-top: 22px;
+}
+.row div p {
+  color: var(--gray);
+  font-size: 12px;
+}
+
+/*________________________________selection______________________*/
+.section-5{
+  background-color: #F2F2F2;
+  padding: 3% 10% 3% 10%;
+  margin-top: 40px;
+
+}
+.section-5 h1{
+  text-align: center;
+  color: var(--orange);
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+.selection{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: space-around;
+  padding: 20px;
+}
+.rows{
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  height: 190px;
+  overflow: hidden;
+}
+.product img[alt="fraise"]{
+  width: 12vw;
+}
+.product img[alt="kiri"]{
+  width: 9vw;
+}
+.rows img{
+  width: 7vw;
+  padding-bottom: 10px;
+}
+.rows img[alt="lait"]{
+  width: 4vw;
+}
+.achat{
+  display: flex;
+  justify-content: space-between;
+  color: var(--orange);
+  padding-top: 10px;
+}
+.rows h4{
+  font-size: 12px;
+  text-decoration: line-through;
+  text-align: right;
+  color: var(--orange);
+}
+.achat a img{
+  width: 34%;
+  background: var(--orange);
+  border-radius: 20%;
+  padding: 4px;
+  cursor: pointer;
+}
+.product{
+  display: flex;
+  justify-content: space-around;
+}
+.product h6{
+  color: var(--gray);
+  padding-top: 10px;
+}
+a img{
+  cursor: pointer;
+}
+/*________________________________Magasin Fruits______________________*/
+.section-6 h1{
+  text-align: center;
+  color: var(--orange);
+  padding: 50px;
+  font-size: 25px;
+}
+.col-1{
+  float: left;
+  margin-left: 200px;
+  margin-right: 20px;
+  text-align: center;
+}
+.magasin{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+  text-align: center;
+  margin: 0 200px;
+}
+.row-1{
+  border: 1px solid #E6E6E6;
+  border-radius: 10px;
+}
+.col-1{
+  border: 1px solid #E6E6E6;
+  border-radius: 10px;
+  width: 16%;
+}
+.row-1 img{
+  width: 10vw;
+  padding: 10px;
+}
+.col-1 img{
+  width: 9.5vw;
+  padding: 10px;
+}
+.kiwi{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.kiwi img{
+  width: 7.3vw;
+  padding: 5px;
+}
+.kiwi h6{
+  font-size: 20px;
+  color: #697511;
+}
+.col-1 p{
+  text-align: center;
+  font-size: 16px;
+  color: #697511;
+}
+strong{
+  color: #ce3333;
+}
+/*________________________________Promos______________________*/
+.section-7{
+  margin-top: 5%;
+  background: #F2F2F2;
+  text-align: center;
+  padding: 2% 20%;
+}
+.section-7 h1{
+  text-align: center;
+  color: var(--orange);
+  font-size: 25px;
+  padding-bottom: 5%;
+  margin-top: 3%;
+}
+.fruits{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+.row-2 h3{
+  font-size: 12px;
+  color: var(--gray);
+}
+.row-2 b{
+  font-size: 15px;
+  color: var(--orange);
+}
+.row-2 img{
+  width: 9vw;
+}
+.row-2 img[alt="huil"]{
+  width: 3vw;
+}
+.row-2 img[alt="Nutella"]{
+  width: 7vw;
+}
+.row-2 img[alt="img"]{
+  width: 6vw;
+}
+.row-2 img[alt="kiri"]{
+  width: 9vw;
+  padding-top: 20px;
+}
+
+.promo{
+  padding: 30px 10px;
+  background: #fff;
+  width: 100%;
+  height: 30vh;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+/*________________________________Promos______________________*/
+.imges{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+.imges{
+  display: flex;
+}
+.imges div img{
+  width: 5vw;
+}
+.imges h2{
+  font-size: 12px;
+  text-align: center;
+  color: var(--gray);
+}
+.titre{
+  padding-top: 12px;
+}
+hr{
+  transform: rotate(90deg);
+  background: var(--orange);
+  border: none;
+  height: 200px;
+  width: 2px;
+  align-items: center;
+}
+
+/* ____________________________________________Footer__________________________ */
+footer{
+  background: #333333;
+  padding: 20px;
+}
+
+.info{
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(6, 18vw);
+}
+.info h4,
+.info p{
+  padding-bottom: 10px;
+}
+.info h4{
+  color: var(--orange);
+}
+
+.footer img{
+  width: 50%;
+}
+
+.submit{
+  display: flex;
+}
+
+.text input{
+  padding: 8px 41px 8px 9px;
+  border-radius: 9px;
+  outline: none;
+  border-color: var(--orange);
+  margin-right: 10px;
+}
+.submit input{
+  padding: 9px;
+  border-radius: 9px;
+  outline: none;
+  background: var(--orange);
+  color: #fff;
+  border-color: var(--orange);
+  margin-right: 10px;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.contact{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+.social{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 23px;
+  padding-right: 27px;
+  align-items: center;
+}
+.social p{
+  color: var(--orange);
+  font-size: 16px;
+  padding-right: 10px;
+}
+.social a i{
+  font-size: 20px;
+  background-color: var(--orange);
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  color: var(--gray);
+  justify-content: space-between;
+}
+
+.phone{
+  border: 1px solid;
+  border-color: var(--orange);
+  padding: 10px 47px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.phone{
+  color: #fff;
+}
+
+.code{
+  text-align: center;
+  padding: 50px 0 10px;
+  font-size: 12px;
+  color: gray;
+}
+
+
+@media only screen and (max-width: 1247px) {
+    nav {
+    padding: 10px 40px;
+    }
+    .logo {
+      margin-right: 0px;
+    }
+
+  /*--actualite--*/
+    .section-2 {
+        display: none;
+    }
+    .actualite {
+      grid-template-columns: repeat(2, 29vw);
+      justify-content: center;
+    }
+    .actualite img {
+    height: 15vw;
+    }
+
+    /*--la selection du moment--*/
+    .selection {
+        grid-template-columns: repeat(3, 20vw);
+    }
+
+    /*--la folie des promo--*/
+    .kiwi img {
+    width: 6.7vw;
+    }
+
+    /*--footer--*/
+    .submit input{
+      grid-template-columns: repeat(2, 10vw);
+      margin-top: 101px;
+    }
+    .text input {
+    padding: 8px 22px 8px 9px;
+    }
+}
+
+@media only screen and (max-width: 1190px) {
+    nav {
+      padding: 15px 42px;
+    }
+    .logo {
+    width: 8vw;
+    }
+
+    /*--header--*/
+    .section-1 {
+    height: 50vh;
+    }
+    .banner{
+    top: 134px;
+    }
+    .banner h3 {
+    font-size: 30px;
+    }
+
+    /*--actualité--*/
+    .actualite {
+    grid-template-columns: repeat(2, auto);
+    }
+    .actualite img {
+    height: 20vw;
+    }
+
+    /*--Rayons--*/
+    .container2{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 15px;
+    }
+
+    /*--la selection du moment--*/
+    .selection {
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*--la selection du moment*/
+    .rows img{
+      width: 9vw;
+    }
+    .product img[alt="fraise"] {
+    width: 16vw;
+    }
+    .product img[alt="kiri"] {
+    width: 12vw;
+    }
+    .rows img[alt="lait"] {
+    width: 5.6vw;
+    }
+    /*--Fruits*/
+    .magasin {
+    grid-template-columns: repeat(2,1fr);
+    }
+    .col-1 {
+    width: 19%;
+    }
+    .col-1 img {
+    width: 13.5vw;
+    padding: 18px;
+    }
+    .fruits {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    }
+    .row-2 img,
+    .row-2 img[alt="kiri"] {
+    width: 12vw;
+    }
+    .row-2 img[alt="Nutella"] {
+    width: 8vw;
+    }
+    .row-2 img[alt="huil"] {
+    width: 3.5vw;
+    }
+    .row-2:last-child {
+    display: none;
+    }
+
+    .sect{
+      padding: 20px 0;
+    }
+
+    /*--Fruits-*/
+    hr{
+      display: none;
+    }
+    /*--footer--*/
+    .contact {
+    justify-content: center;
+    padding: 0;
+    }
+    .submit input,
+    .text input {
+    display: none;
+    }
+
+}
+  @media only screen and (max-width: 997px) {
+    li input{
+      margin-right: auto;
+    }
+/*--prmo*/
+    .promo {
+    height: 24vh;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+  .Recherche{
+    display: block;
+    margin-left: 183px;
+    }
+    .input{
+      display: none;
+    }
+    .logo {
+    width: 11vw;
+    margin-right: 30vw;
+    }
+    /*--header*/
+    .banner{
+      top: 163px;
+    }
+    .banner h3 {
+    font-size: 25px;
+    }
+    .banner input {
+    font-size: 13px;
+    padding: 10px 13px;
+    }
+    .container1 h3 {
+    font-size: 12px;
+    }
+  }
+
+
+  @media only screen and (max-width: 750px) {
+    li {
+    padding-right: 25px;
+    }
+    .logo {
+    width: 15vw;
+    margin-right: 5vw;
+    }
+    .Recherche {
+    display: block;
+    margin-left: 92px;
+    }
+
+    .banner {
+    right: 53px;
+     }
+
+    /*--actualite*/
+    .actualite {
+    grid-template-columns: repeat(1, auto);
+    }
+    .actualite img {
+    height: 27vw;
+    }
+
+    /*--selection*/
+    .selection {
+    grid-template-columns: repeat(1, 38vw);
+    }
+    .achat a img {
+    width: 44%;
+    }
+
+    /*--Rayon*/
+    .container2 {
+    grid-template-columns: repeat(2, auto);
+    }
+
+    /*--fruits*/
+    .section-6{
+      display: none;
+    }
+
+    /*--Promos*/
+    .fruits {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .row-2 img, .row-2 img[alt="kiri"] {
+    width: 17vw;
+    }
+    .row-2 img[alt="huil"] {
+    width: 4.8vw;
+    }
+    .row-2 img[alt="Nutella"] {
+    width: 12vw;
+    }
+    .row-2:nth-last-child(2){
+      display: none;
+    }
+
+    /*--footer*/
+    .info {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .footer:nth-last-child(2){
+      display: none;
+    }
+    .social a i {
+    padding: 6px;
+    }
+
+  @media only screen and (max-width: 640px) {
+    .input {
+    padding: 12px 157px 12px 12px;
+    }
+    /*--header*/
+    .banner h3 {
+    font-size: 20px;
+    }
+
+    .actualite img {
+    height: 43vw;
+    }
+
+    /*--Rayons*/
+    .container2 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    }
+
+    /*--selection*/
+    .selection {
+    grid-template-columns: repeat(1, 50vw);
+    }
+    .rows img {
+    width: 14vw;
+    }
+    .product img[alt="fraise"] {
+    width: 24vw;
+    }
+    .product img[alt="kiri"] {
+    width: 19vw;
+    }
+    .rows img[alt="lait"] {
+    width: 9vw;
+    }
+/* ----------------*/
+    .imges {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    }
+
+
+    /*--footer*/
+    .info {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+    }
+    .footer img {
+    padding-top: 25%
+    }
+}
+
+@media only screen and (max-width: 580px) {
+  .logo{
+    padding-right: 20vw;
+  }
+  .menu{
+    padding-left: 33px;
+  }
+  li {
+     padding-right: 0px;
+  }
+  .logo{
+    padding-right: 10px;
+  }
+  .menu{
+    padding-left: 20px;
+  }
+  .Recherche {
+    margin-left: 22px;
+  }
+  .phone {
+    padding: 7px 20px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+
+  .fa, .fas {
+  margin-right: 21px;
+  }
+  .logo {
+    padding-right: 0px;
+  }
+  .logo {
+    width: 18vw;
+  }
+  .Recherche {
+    margin-left: 0px;
+    padding: 12px 90px 12px 12px;
+  }
+
+  .banner {
+    top: 172px;
+    right: 18px;
+  }
+  .banner h3 {
+    font-size: 18px;
+  }
+
+  .promo {
+    height: 18vh;
+  }
+
+  .container1 {
+    width: 30vh;
+  }
+  .row-2 img, .row-2 img[alt="kiri"] {
+    width: 21vw;
+  }
+  .row-2 img[alt="huil"] {
+    width: 5.8vw;
+  }
+  .row {
+    margin-left: 0px;
+    width: 128px;
+  }
+
+  .rows img {
+  width: 20vw;
+  }
+
+  .fas.fa-plus {
+    margin-right: 2px;
+  }
+
+  .product {
+  display: block;
+  }
+  .product img[alt="fraise"] {
+    width: 37vw;
+  }
+  .rows img[alt="lait"] {
+    width: 12vw;
+  }
+
+  .section-7 h1,
+  .section-5 h1,
+  .section-4 h1 {
+    font-size: 20px;
+  }
+  /*--footer*/
+  .info {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+  }
+  .contact{
+    display: block;
+  }
+  .phone {
+    text-align: center;
+    font-size: 18px;
+  }
+  .imges div img {
+    width: 10vw;
+  }
+  .code {
+    font-size: 7px;
+  }
+}
+
+
+@media only screen and (max-width: 320px) {
+  nav {
+    padding: 10px 6px;
+    }
+    .logo {
+    width: 18vw;
+    margin-right: 2vw;
+    }
+  .Recherche {
+    margin-left: 33px;
+    margin-top: 5px;
+    padding: 12px 65px 12px 12px;
+    }
+    .panier {
+    width: 3vh !important;
+    }
+    li {
+    padding-right: 0px;
+    }
+    .icon{
+      width: 8vw;
+
+    }
+    .menu a{
+      font-size: .75rem;
+    }
+
+
+    .banner input {
+    font-size: 8px;
+    }
+    .banner {
+    right: 23px;
+    top: 152px;
+    }
+    .banner h3 {
+    font-size: 16px;
+    }
+
+
+    .row-2 img, .row-2 img[alt="kiri"] {
+    width: 22vw;
+    }
+
+    .product {
+    display: block;
+    }
+    .rows img {
+    width: 20vw;
+    }
+    .rows img[alt="lait"] {
+    width: 15vw;
+    }
+
+    .row{
+      margin-left: 0;
+      width: 120px;
+    }
+
+    .product img[alt="fraise"] {
+    width: 39vw;
+    }
+    .product img[alt="kiri"] {
+    width: 29vw;
+    }
+    .row-2 img[alt="Nutella"] {
+    width: 18vw;
+    }
+    .row-2 img[alt="huil"] {
+    width: 8.6vw;
+    }
+
+    .imges div img {
+    width: 10vw;
+    }
+    .imges h2 {
+    font-size: 10px;
+    }
+
+    .info {
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 12px;
+   }
+   .contact {
+    display: block;
+  }
+  .social p {
+    font-size: 12px;
+  }
+}
